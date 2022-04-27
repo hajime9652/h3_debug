@@ -17,6 +17,9 @@ ENV HOST 0.0.0.0
 ENV PORT 80
 EXPOSE 80
 
+# RUN yarn upgrade h3@0.3.2
+
 RUN yarn build
+
 
 CMD ["yarn", "start"]
